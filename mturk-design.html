@@ -1,0 +1,671 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<script>
+function myFunctionName(){
+  // console.log(document.getElementById('1a0'))
+  // console.log(document.getElementById('1a0'))
+
+  console.log(document.getElementById('q1b0').checked)
+  console.log(document.getElementById('q1a0').checked)
+  if((document.getElementById('q1b0').checked == true) || (document.getElementById('q1a0').checked == true))  {
+    document.getElementById('q2').style.visibility='hidden';
+
+    // document.getElementsByName('q2b').required = false;
+    // document.getElementsByName('q2b').disabled = true;
+
+    // document.getElementById('q2b0').required = false;
+    // document.getElementById('q2b1').required = false;
+    // document.getElementById('q2b2').required = false;
+
+    document.getElementById('q2b0').disabled = true;
+    document.getElementById('q2b1').disabled = true;
+    document.getElementById('q2b2').disabled = true;
+
+    // document.getElementById('q2b0').required = false;
+    // document.getElementById('q2b0').disabled = true;
+    // document.getElementById('q2b1').required = false;
+    // document.getElementById('q2b1').disabled = true;
+    // document.getElementById('q2b2').required = false;
+    // document.getElementById('q2b2').disabled = true;
+
+    // document.getElementById('q2a').checked = false;
+
+    // document.getElementById('q2a1').checked = false;
+    // document.getElementById('q2a2').checked = false;
+    // document.getElementById('q2a3').checked = false;
+    // document.getElementById('q2a4').checked = false;
+    // document.getElementById('q2a5').checked = false;
+    // document.getElementById('q2a6').checked = false;
+    // document.getElementById('q2a7').checked = false;
+    // document.getElementById('q2a8').checked = false;
+
+    // document.getElementById('q2a1').required = false;
+    // document.getElementById('q2a2').required = false;
+    // document.getElementById('q2a3').required = false;
+    // document.getElementById('q2a4').required = false;
+    // document.getElementById('q2a5').required = false;
+    // document.getElementById('q2a6').required = false;
+    // document.getElementById('q2a7').required = false;
+    // document.getElementById('q2a8').required = false;
+
+    document.getElementById('q2a1').disabled = true;
+    document.getElementById('q2a2').disabled = true;
+    document.getElementById('q2a3').disabled = true;
+    document.getElementById('q2a4').disabled = true;
+    document.getElementById('q2a5').disabled = true;
+    document.getElementById('q2a6').disabled = true;
+    document.getElementById('q2a7').disabled = true;
+    document.getElementById('q2a8').disabled = true;
+  } else {
+    document.getElementById('q2').style.visibility='';
+    // document.getElementById('q2a').disabled = false;
+    // document.getElementById('q2a').disabled = false;
+    // document.getElementById('q2a').disabled = false;
+    document.getElementById('q2a1').disabled = false;
+    document.getElementById('q2a2').disabled = false;
+    document.getElementById('q2a3').disabled = false;
+    document.getElementById('q2a4').disabled = false;
+    document.getElementById('q2a5').disabled = false;
+    document.getElementById('q2a6').disabled = false;
+    document.getElementById('q2a7').disabled = false;
+    document.getElementById('q2a8').disabled = false;
+    // document.getElementById('q2a').required = false;
+    // document.getElementById('q2b').required = false;
+    if(
+      (document.getElementById('q2a1').checked == true) || 
+      (document.getElementById('q2a2').checked == true) ||
+      (document.getElementById('q2a3').checked == true) || 
+      (document.getElementById('q2a4').checked == true) || 
+      (document.getElementById('q2a5').checked == true) || 
+      (document.getElementById('q2a6').checked == true) || 
+      (document.getElementById('q2a7').checked == true) || 
+      (document.getElementById('q2a8').checked == true) 
+      // (document.getElementById('q2a').checked == true) 
+
+  ){
+    document.getElementById('q2bdiv').style.visibility='';
+    // document.getElementsByName('q2b').required = true;
+    // document.getElementsByName('q2b').disabled = false;
+
+
+    document.getElementById('q2b0').required = true;
+    document.getElementById('q2b1').required = true;
+    document.getElementById('q2b2').required = true;
+
+    document.getElementById('q2b0').disabled = false;
+    document.getElementById('q2b1').disabled = false;
+    document.getElementById('q2b2').disabled = false;
+
+  } else {
+    document.getElementById('q2bdiv').style.visibility='hidden';
+    // document.getElementsByName('q2b').required = false;
+    // document.getElementsByName('q2b').disabled = true;
+
+    // document.getElementById('q2b0').required = false;
+    // document.getElementById('q2b1').required = false;
+    // document.getElementById('q2b2').required = false;
+
+    
+    document.getElementById('q2b0').required = false;
+    document.getElementById('q2b1').required = false;
+    document.getElementById('q2b2').required = false;
+
+    document.getElementById('q2b0').disabled = true;
+    document.getElementById('q2b1').disabled = true;
+    document.getElementById('q2b2').disabled = true;
+
+    // document.getElementById('q2b0').checked = false;
+    // document.getElementById('q2b1').checked = false;
+    // document.getElementById('q2b2').checked = false;
+
+    // document.getElementById('q2b').checked = false;
+    // document.getElementById('q2b').required = false;
+    // document.getElementById('q2b').disabled = true;
+
+  }
+  }
+ 
+
+    // if(document.getElementById('agreecheckbox').checked  == true){
+    // document.getElementById('agreecheckbox').checked = '';
+    // var field= document.getElementById('textbox1').style.visibility='hidden';
+    // // field.value= field.defaultValue;
+    // // var field= document.getElementById('textbox2');
+    // // field.value= field.defaultValue;
+    // } else {
+    //   document.getElementById('agreecheckbox').checked = '';
+    // var field= document.getElementById('textbox1').style.visibility='hidden';
+    // }
+  
+  }
+
+</script>
+<style>
+    h3 {
+      margin-top: 0;
+      width: 100%;
+      align-self: center;
+      text-align: center;
+      justify-content: center;
+      
+      
+    }
+    /* label {
+        flex-wrap: nowrap;
+        text-overflow: clip;
+    } */
+    .h3wrapper {
+
+        /* justify-content: center;
+        align-self: center;
+        text-align: center; */
+        /* padding-right: 12.5%;
+        padding-left: 12.5%; */
+        width: 90%;
+        align-self: center;
+        justify-content: center;
+        
+    }
+    .optionsdiv {
+        /* width: min-content; */
+        /* width: 100%; */
+        /* justify-content:; */
+        flex-direction: column ;
+        /* display: ;
+        justify-content: center; */
+        align-self: center;
+        
+        /* width; */
+        display: flex;
+        /* BELOW WAS UNCOMMENTED TO MAKE THINGS SHOW UP IN MIDDLE */
+        /* width: 60%;
+        margin-left:20%;
+        margin-right:20%; */
+
+        
+    }
+    .childrenn {
+        /* display: flex; */
+        /* justify-self: left;
+        align-self: left;
+        flex-wrap: nowrap; */
+        /* width: max-content; */
+        /* height: min-content;
+        display: inline-flex;
+        margin-right: auto; */
+        width: 100%;
+        margin-left:5%;
+        justify-content: left;
+        display: inline-flex;
+        
+    }
+    .centerDiv {
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+    }
+    .confidenceChildren {
+        width: 100%;
+        justify-content: left;
+        display: inline-flex;
+    }
+
+    
+    crowd-card {
+      width: 100%;
+    }
+    .hh4 {
+      margin-top: 0;
+      width: 80%;
+      justify-content: center;
+      text-align: center;
+    }
+    .card {
+      margin: 10px;
+    }
+    
+    .left {
+      width: 70%;
+      margin-right: 10px;
+      display: inline-block;
+      height: 200px;
+    }
+    .leftt {
+      width: 45%;
+      margin-right: 10px;
+      display: inline-block;
+      height: 200px;
+    }
+    .right {
+      width: 20%;
+      height: 200px;
+      display: inline-block;
+    }
+    .rightt {
+      width: 45%;
+      height: 200px;
+      display: inline-block;
+      margin-right: 0%;
+    }
+    .halfr {
+      /* width: 47.5%; */
+      /* height: 200px; */
+      /* display: inline-block; */
+      /* display: inline-flex; */
+      /* height: 200px; */
+right: 0%;
+      /* padding-left: 40px; */
+      /*padding-right: 20px; */
+      justify-content:center;
+      /* display: flexbox; */
+      text-align:center;
+      /* width:max-content; */
+      width: fit-content;
+      width: 30%;
+      
+
+    }
+    .halfl {
+      /* width: 47.5%; */
+      /* height: 200px; */
+      /* display: inline-block; */
+      /* display: inline-flex; */
+      /* height: 200px; */
+        left: 0%;
+      /* padding-left: 20px;
+      padding-right: 20px; */
+      justify-content:center;
+      /* display: flexbox; */
+      text-align:center;
+      /* width:max-content; */
+      /* width: fit-content; */
+      width: 70%;
+      
+
+    }
+    .lhs {
+      /* width: 47.5%; */
+      /* width: 150px; */
+      width: 15%;
+      left: 0;
+      /* height: 200px; */
+      /* display: inline-block; */
+      /* display: inline-flex; */
+      /* height: 200px; */
+
+      /* margin-right: 20px; */
+      justify-content:center;
+      /* display: flexbox; */
+
+      text-align:left;
+      vertical-align: text-top;
+      
+      
+
+    }
+    .rhs {
+        background-color: white;
+        display: flex;
+        padding: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        justify-content: center;
+        /* width:fit-content; */
+        width: 85%;
+        right: 0%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .InLine {
+        display: inline-flex;
+        /* height: 200px; */
+        width: 100%;
+        overflow: hidden;
+    }
+  </style>
+<crowd-form>
+    <!-- <form id="formName" method="post">
+        <button onclick="myFunctionName();" type="button"  id="reset">reset</button>
+        <input type="checkbox" checked="" id="agreecheckbox">
+        </form> -->
+    <short-instructions>
+        Please select whether or not the text talks about someone changing or stopping a treatment or medication. 
+      </short-instructions>
+  
+  <full-instructions header="Instructions">
+    <h2><strong>Question (1)</strong></h2>
+    <h3 style="text-align: left;"><strong>(1a) Does any part of the text talk about someone changing or stopping a treatment or medication?</strong></h3>
+    <p style="padding-left: 5%;"><strong>Yes</strong>: the text talks about someone changing or stopping a treatment or medication.</p>
+    <p style="padding-left: 5%;"><strong>No</strong>: the text does not talk about someone changing or stopping a treatment or medication.</p>
+
+    <h3 style="text-align: left;"><strong>(1b) How confident are you in your answer to Question (1a)? Is it clear whether or not the text talks about someone changing or stopping a treatment or medication?</strong></h3>
+    <!-- <p><strong>Certain</strong>: I am absolutely sure that the text talks about someone changing or stopping a medication that they are taking.</p> -->
+    <p style="padding-left: 5%;"><strong>Very Confident</strong>: I am very confident in my answer to Question (1a). If I answered <strong>"No"</strong> for Question (1a), it is clear that no part of the text talks about someone changing or stopping a treatment or medication. If I answered <strong>"Yes"</strong> for Question (1a), a part of the text clearly talks about someone changing or stopping a treatment or medication.</p>
+    <p style="padding-left: 5%;"><strong>Somewhat Confident</strong>: I am somewhat confident that my answer to Question (1a) is correct, but I am not certain.</p>
+    <p style="padding-left: 5%;"><strong>Not Confident</strong>: I have little or no confidence in my answer to Question (1a). Select this option if it is unclear whether or not the text talks about someone stopping a treatment or medication. If you select "Not Confident" for Question (1b), skip Question (2).</p>
+
+    <!-- <p><strong>Somewhat confident</strong>: the text talks about someone changing or stopping a treatment or medication with some confidence</p> -->
+    
+    <br>
+    <h2><strong>Question (2)</strong></h2>
+    <h3 style="text-align: left;"><strong>(2a) Why did the treatment or medication change occur? (select all that apply)</strong></h3>
+    <p style="padding-left: 5%;"><strong>The treatment / medication ended or the person no longer needed it</strong>: For example: a person stopped a medication / treatment after they healed </p>
+    <p style="padding-left: 5%;"><strong>The treatment / medication didn't work</strong>: For example: a person took a medication or went to physical therapy but they didn't get any better</p>
+    <p style="padding-left: 5%;"><strong>The treatment / medication caused bad side effects</strong>: For example: a medication caused a person to have bad side effects such as headaches, tiredness, nausea, sickness, or pain</p>
+    <p style="padding-left: 5%;"><strong>The person switched to a different treatment / medication</strong>: 
+      For example: the treatment / medication a person was taking wasn't working so they switched to a different medication</p>
+    <!-- <p><strong>The person no longer needed treatment / medication</strong>: </p> -->
+    <p style="padding-left: 5%;"><strong>The person forgot to take or use the treatment / medication</strong>: For example: a person went on vacation and left their medication at home</p>
+    <p style="padding-left: 5%;"><strong>The person can no longer access, buy, or afford the treatment / medication</strong>: For example: a person's insurance stopped covering a medication, and the person can't afford to pay for it themselves</p>
+    <p style="padding-left: 5%;"><strong>Other medical reason</strong>: For example: a person stopped the medication after they became pregnant</p>
+    <p style="padding-left: 5%;"><strong>Other non-medical reason</strong>: For example: a family member conviced the person to stop taking their medication</p>
+    <p style="padding-left: 5%;"><strong>Not specified / Unclear</strong>: The text doesn't say why the person stopped the medication / treatment, or the text is difficult to understand</p>
+    
+
+    <h3 style="text-align: left;"><strong>(2b) How confident are you in your answer to Question (2a)? Does the text clearly describe why the treatment or medication change occurred?</strong></h3>
+    <p style="padding-left: 5%;"><strong>Very Confident</strong>: I am very confident in my answer to Question (2a).</p>
+    <p style="padding-left: 5%;"><strong>Somewhat Confident</strong>: I am somewhat confident that my answer to Question (2a) is correct, but I am not certain.</p>
+    <p style="padding-left: 5%;"><strong>Not Confident</strong>: I have very little or no confidence in my answer to Question (2a).</p>
+
+  </full-instructions>
+  
+  <div>
+    <h2>Text:</h2>
+    <crowd-card>
+      <div class="card">
+        ${text}
+      </div>
+    </crowd-card>
+  </div>
+  <br><br>
+  <!-- <h2>Questions:</h2> -->
+  <div class="InLine">
+    <div class ="lhs">
+        <h2 >Question 1:  </h2>
+    </div>
+    <div class="rhs">
+    <div class ="halfl">
+    <!-- <div> -->
+            <div class="h3wrapper">
+                <h3 >(1a) Does any part of the text talk about someone changing or stopping a treatment or medication?</h3>
+            </div>
+            <div class = "h3wrapper">
+                <div class="optionsdiv">
+                     <div class = "centerDiv">
+                        <input type="radio" id="q1a1" name="q1a" value="yes" onclick="myFunctionName();" required>
+                        <label for="yes">Yes</label>
+                      </div>
+                     <div class = "centerDiv">
+                        <input type="radio" id="q1a0" name="q1a" value="no"  onclick="myFunctionName();">
+                        <label for="no">No (Skip Question 2)</label>
+                      </div>
+                <!-- <crowd-radio-group class="optionsdiv" style="justify-content:flex-start;">
+                    <crowd-radio-button name="1a1" value="yes">Yes</crowd-radio-button>
+                    <crowd-radio-button name="1a0" value="no">No</crowd-radio-button>
+                  </crowd-radio-group> -->
+                </div>
+            </div>
+            <!-- <select name="sentiment1" style="font-size: large; width:75%;" required>
+                <option value="">(Please Select)</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select> -->
+
+    </div>
+    <div  class ="halfr">
+    <!-- <div> -->
+            <h3 >(1b) How confident are you in your answer to Question (1a)?</h3>
+            <div class = "h3wrapper">
+                <div class="optionsdiv">
+
+                      <!-- <div class = "confidenceChildren">
+                        <input type="radio" id="q1b" name="q1b" value="1">
+                        <label for="1">Somewhat Confident</label>
+                      </div> -->
+
+                     <div class = "confidenceChildren">
+                        <input type="radio" id="q1b2" name="q1b" value="very_confident" onclick="myFunctionName();"  required>
+                        <label for="very_confident">Very Confident</label>
+                      </div>
+                      <div class = "confidenceChildren">
+                        <input type="radio" id="q1b1" name="q1b" value="somewhat_confident" onclick="myFunctionName();" >
+                        <label for="somewhat_confident">Somewhat Confident</label>
+                      </div>
+                      <div class = "confidenceChildren">
+                        <input type="radio" id="q1b0" name="q1b" value="not_confident" onclick="myFunctionName();"  >
+                        <label for="not_confident">Not Confident (Skip Question 2)</label>
+                      </div>
+                     <!-- <div class = "confidenceChildren">
+                        <input type="radio" id="q1b" name="q1b" value="4" >
+                        <label for="4">Certain</label>
+                      </div> -->
+                <!-- <crowd-radio-group  class="optionsdiv" style="justify-content:flex-start;">
+                    <crowd-radio-button name="q1b0" value="0">Not Confident At All (Skip Questions 2 & 3)</crowd-radio-button>
+                    <crowd-radio-button name="q1b1" value="1">Slightly Confident</crowd-radio-button>
+                    <crowd-radio-button name="q1b2" value="2">Confident</crowd-radio-button>
+                    <crowd-radio-button name="q1b3" value="3">Very Confident</crowd-radio-button>
+                    <crowd-radio-button name="q1b4" value="4">Certain</crowd-radio-button>
+                  </crowd-radio-group> -->
+                  <!-- <crowd-classifier
+                    name="category"
+                    categories="['cata','catb']"
+                    header="What type of a document is this?"
+                    >
+                </crowd-classifier> -->
+                </div>
+            </div>
+            <!-- <select name="confidence1" style="font-size: large; width:75%;" required>
+                <option value="">(Please Select)</option>
+                <option>Not Confident At All (Skip Questions 2 & 3)</option>
+                <option>Slightly Confident</option>
+                <option>Confident</option>
+                <option>Very Confident</option>
+                <option>Certain</option>
+            </select> -->
+
+    </div>
+</div>
+</div>
+<br><br>
+<div id="q2">
+<div class="InLine">
+    <div class ="lhs">
+        <h2 >Question 2:  </h2>
+    </div>
+    <div class="rhs">
+    <div class ="halfl">
+    <!-- <div> -->
+            <div class="h3wrapper">
+                <h3 >(2a) Why did the treatment or medication change occur? (select all that apply)</h3>
+                <!-- <h4 style="margin-top: 0%;">Please select all that apply.</h4> -->
+            </div>
+            <div class = "h3wrapper">
+                <div class="optionsdiv">
+                    <!-- <div class="children"> -->
+                        <!-- <form id="formName" method="post">
+                            <button onclick="myFunctionName();" type="button"  id="reset">reset</button>
+                            <input type="checkbox" checked="" id="agreecheckbox" name="q2a0">
+                            <label for="0">Dummy Check</label>
+                        </form> -->
+                    <!-- </div> -->
+
+
+
+
+                    <!-- <div class = "childrenn">
+                      <input type="checkbox" id="q2a" name="q2a" value="1" onclick="myFunctionName();">
+                      <label for="1">The treatment / medication ended or the person no longer needed it</label>
+                    </div>
+                   <div class = "childrenn">
+                      <input type="checkbox" id="q2a" name="q2a" value="2" onclick="myFunctionName();">
+                      <label for="2">The treatment /medication didn't work</label>
+                    </div>
+                   <div class = "childrenn">
+                      <input type="checkbox" id="q2a" name="q2a" value="3" onclick="myFunctionName();">
+                      <label for="3">The treatment / medication caused bad side effects</label>
+                    </div>
+                   <div class = "childrenn">
+                      <input type="checkbox" id="q2a" name="q2a" value="4" onclick="myFunctionName();">
+                      <label for="4">The person switched to a different treatment / medication</label>
+                    </div>
+                   <div class = "childrenn">
+                      <input type="checkbox" id="q2a" name="q2a" value="5" onclick="myFunctionName();">
+                      <label for="5">The person forgot to take or use the treatment / medication</label>
+                    </div>
+                   <div class = "childrenn">
+                      <input type="checkbox" id="q2a" name="q2a" value="6" onclick="myFunctionName();">
+                      <label for="6">The person can no longer access, buy, or afford the treatment / medication</label>
+                    </div>
+                   <div class = "childrenn">
+                      <input type="checkbox" id="q2a" name="q2a" value="7" onclick="myFunctionName();">
+                      <label for="7">Other medical reason</label>
+                    </div>
+                    <div class = "childrenn">
+                      <input type="checkbox" id="q2a" name="q2a" value="8"  onclick="myFunctionName();">
+                      <label for="8">Other non-medical reason</label>
+                    </div> -->
+
+
+
+
+
+
+
+
+                   <div class = "childrenn">
+                        <input type="checkbox" id="q2a1" name="q2a" value="q2a1" onclick="myFunctionName();">
+                        <label for="q2a1">The treatment / medication ended or the person no longer needed it</label>
+                      </div>
+                     <div class = "childrenn">
+                        <input type="checkbox" id="q2a2" name="q2a" value="q2a2" onclick="myFunctionName();">
+                        <label for="q2a2">The treatment /medication didn't work</label>
+                      </div>
+                     <div class = "childrenn">
+                        <input type="checkbox" id="q2a3" name="q2a" value="q2a3" onclick="myFunctionName();">
+                        <label for="q2a3">The treatment / medication caused bad side effects</label>
+                      </div>
+                     <div class = "childrenn">
+                        <input type="checkbox" id="q2a4" name="q2a" value="q2a4" onclick="myFunctionName();">
+                        <label for="q2a4">The person switched to a different treatment / medication</label>
+                      </div> 
+                     <!-- <div class = "childrenn">
+                        <input type="radio" id="q2a5" name="q2a5" value="5" >
+                        <label for="5">The person no longer needed treatment</label>
+                      </div> -->
+                      <div class = "childrenn">
+                        <input type="checkbox" id="q2a5" name="q2a" value="q2a5" onclick="myFunctionName();">
+                        <label for="q2a5">The person forgot to take or use the treatment / medication</label>
+                      </div>
+                     <div class = "childrenn">
+                        <input type="checkbox" id="q2a6" name="q2a" value="q2a6" onclick="myFunctionName();">
+                        <label for="q2a6">The person can no longer access, buy, or afford the treatment / medication</label>
+                      </div>
+                     <div class = "childrenn">
+                        <input type="checkbox" id="q2a7" name="q2a" value="q2a7" onclick="myFunctionName();">
+                        <label for="q2a7">Other medical reason</label>
+                      </div>
+                      <div class = "childrenn">
+                        <input type="checkbox" id="q2a8" name="q2a" value="q2a8"  onclick="myFunctionName();">
+                        <label for="q2a8">Other non-medical reason</label>
+                      </div>
+
+
+
+
+
+
+
+                     <!-- <div class = "childrenn">
+                        <input type="checkbox" id="q2a" name="q2a" value="10">
+                        <label for="9">Not specified</label>
+                      </div> -->
+                      <!-- <div>
+                        <input type="radio" id="q5" name="q5j" value="10">
+                        <label for="10">Unsure (skip Question 6)</label>
+                      </div>
+                      <div>
+                        <input type="radio" id="q5" name="q5k" value="11">
+                        <label for="11">Not specified / Not stated</label>
+                      </div> -->
+                <!-- <crowd-radio-group class="optionsdiv" style="justify-content:flex-start;">
+                    <crowd-radio-button name="q2a0" value="Treatment ended">Treatment ended</crowd-radio-button>
+                    <crowd-radio-button name="q2a1" value="Treatment didn't work">Treatment didn't work</crowd-radio-button>
+                    <crowd-radio-button name="q2a2" value="Treatment caused side effects">Treatment caused side effects</crowd-radio-button>
+                    <crowd-radio-button name="q2a3" value="Switched to a different treatment">Switched to a different treatment</crowd-radio-button>
+                    <crowd-radio-button name="q2a4" value="No longer needed treatment">No longer needed treatment</crowd-radio-button>
+                    <crowd-radio-button name="q2a5" value="Forgot to take or use treatment">Forgot to take or use treatment</crowd-radio-button>
+                    <crowd-radio-button name="q2a6" value="Can't access / buy / afford treatment">Can't access / buy / afford treatment</crowd-radio-button>
+                    <crowd-radio-button name="q2a7" value="Other reason">Other reason</crowd-radio-button>
+                    <crowd-radio-button name="q2a8" value="Not specified">Not specified</crowd-radio-button>
+                  </crowd-radio-group> -->
+                </div>
+            </div>
+            <!-- <select name="sentiment2" style="font-size: large; width:75%;" multiple>
+                <option value="">(Please Select)</option>
+                <option>Treatment ended</option>
+                <option>Treatment didn't work</option>
+                <option>Treatment caused side effects</option>
+                <option>Switched to a different treatment</option>
+                <option>No longer needed treatment</option>
+                <option>Forgot to take or use treatment</option>
+                <option>Can't access / buy / afford treatment</option>
+                <option>Other reason</option>
+                <option>Not specified</option>
+            </select> -->
+
+    </div>
+    <!-- <div id="q2bdiv"> -->
+    <div  class ="halfr" id="q2bdiv" style="visibility: hidden;" >
+    <!-- <div> -->
+        
+            <h3 >(2b) How confident are you in your answer to Question (2a)?</h3>
+            <div class = "h3wrapper" >
+                <div class="optionsdiv">
+                        <div class = "confidenceChildren">
+                          <input type="radio" id="q2b2" name="q2b" value="very_confident" disabled>
+                          <label for="very_confident">Very Confident</label>
+                        </div>
+                        <div class = "confidenceChildren">
+                          <input type="radio" id="q2b1" name="q2b" value="somewhat_confident" disabled>
+                          <label for="somewhat_confident">Somewhat Confident</label>
+                        </div>
+                       <div class = "confidenceChildren">
+                            <input type="radio" id="q2b0" name="q2b" value="not_confident" disabled >
+                            <label for="not_confident">Not Confident</label>
+                          </div>
+                         <!-- <div class = "confidenceChildren">
+                            <input type="radio" id="q2b" name="q2b" value="1">
+                            <label for="1">Slightly Confident</label>
+                          </div> -->
+
+
+                         <!-- <div class = "confidenceChildren">
+                            <input type="radio" id="q2b" name="q2b" value="4" >
+                            <label for="4">Certain</label>
+                          </div> -->
+                <!-- <crowd-radio-group class="optionsdiv" style="justify-content:flex-start;">
+                    <crowd-radio-button name="q2b0" value="0">Not Confident At All</crowd-radio-button>
+                    <crowd-radio-button name="q2b1" value="1">Slightly Confident</crowd-radio-button>
+                    <crowd-radio-button name="q2b2" value="2">Confident</crowd-radio-button>
+                    <crowd-radio-button name="q2b3" value="3">Very Confident</crowd-radio-button>
+                    <crowd-radio-button name="q2b4" value="4">Certain</crowd-radio-button>
+                  </crowd-radio-group> -->
+                </div>
+            </div>
+            <!-- <select name="confidence2" style="font-size: large; width:75%;" >
+                <option value="">(Please Select)</option>
+                <option>Not Confident At All </option>
+                <option>Slightly Confident</option>
+                <option>Confident</option>
+                <option>Very Confident</option>
+                <option>Certain</option>
+            </select> -->
+
+    </div>
+
+</div>
+<!-- <div style="height: 25px;"></div> -->
+
+</div>
+</div>
+</div>
+</crowd-form>
